@@ -7,7 +7,6 @@
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
-[![Downloads](https://pepy.tech/badge/pypans)](https://pepy.tech/project/pep8-checker)
 
 # PEP8 checker
 
@@ -32,16 +31,17 @@ _**Note**: the project is under construction._
   - [pydocstyle](https://github.com/PyCQA/pydocstyle)
 
 ## Usage
-TBD
+![Usage](howto.gif)
 
 ### Quick start
 TBD
 
 ### Source code
-TBD
-
-### Local debug
-TBD
+```bash
+git clone git@github.com:vyahello/pep8-checker.git
+python -m checker
+```
+_**Note**: please make sure **AWS_ENDPOINT** environment variable is configured preliminary._
 
 **[⬆ back to top](#pep8-checker)**
 
