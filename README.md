@@ -13,11 +13,11 @@
 
 > Check your python code complies with pep8 conventions.
 > 
-> It uses **bottle** micro framework and **AWS lambda** function to execute code on the server.
+> It uses **bottle** python micro web framework and **AWS lambda** function to execute code on the server.
 
 ## Tools
 
-- python 3.6 | 3.7 | 3.8
+- python 3.6, 3.7, 3.8
 - [bottle](https://bottlepy.org/docs/dev/tutorial.html)
 - [AWS lambda](https://aws.amazon.com/)
 - [travis](https://travis-ci.org/) CI
