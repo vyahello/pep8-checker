@@ -6,14 +6,19 @@ import attr
 from bottle import TEMPLATE_PATH, abort, request, route, run, view
 import requests
 
-API_URL: str = os.environ.get('AWS_ENDPOINT', '')
-if not API_URL:
-    raise RuntimeError('Please set API_URL environment variable')
 TEMPLATE_PATH.append(str(Path('./') / 'checker' / 'views'))
 
 
+def __api_url() -> str:
+    """Returns AWS_ENDPOINT URL."""
+    url: str = os.environ.get('AWS_ENDPOINT', '')
+    if not url:
+        raise RuntimeError('Please set API_URL environment variable')
+    return url
+
+
 @attr.dataclass(frozen=True, slots=True)
-class Server:
+class __Server:
     """The class represents a server endpoint."""
 
     host: str = 'localhost'
@@ -42,7 +47,7 @@ def index() -> Dict[str, str]:
     code: str = request.forms.get('code', '')  # pylint: disable=no-member
     if code:
         resp: Dict[Any, Any] = requests.post(
-            url=API_URL, json={'code': code}
+            url=__api_url(), json={'code': code}
         ).json()
         error: Optional[str] = resp.get('errorMessage')
         exception: Optional[str] = resp.get('errorType')
@@ -55,7 +60,7 @@ def index() -> Dict[str, str]:
     return {'title': title, 'code': code, 'pep_errors': ''}
 
 
-def __easyrun(server: Server = Server()) -> None:
+def __easyrun(server: __Server = __Server()) -> None:
     """Launches a web application.
 
     Args:
