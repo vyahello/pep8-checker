@@ -15,6 +15,8 @@
 > 
 > It uses **bottle** python micro web framework and **AWS lambda** function to execute code on the server.
 
+_**Note**: the project is under construction._
+
 ## Tools
 
 - python 3.6, 3.7, 3.8
