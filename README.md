@@ -1,8 +1,4 @@
-![Screenshot](icon.png)
-
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Build Status](https://travis-ci.org/vyahello/pep8-checker.svg?branch=master)](https://travis-ci.org/vyahello/pep8-checker)
-[![Coverage Status](https://coveralls.io/repos/github/vyahello/pep8-checker/badge.svg?branch=master)](https://coveralls.io/github/vyahello/pep8-checker?branch=master)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Checked with pylint](https://img.shields.io/badge/pylint-checked-blue)](https://www.pylint.org)
 [![Checked with flake8](https://img.shields.io/badge/flake8-checked-blue)](http://flake8.pycqa.org/)
@@ -12,17 +8,18 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![Downloads](https://pepy.tech/badge/pypans)](https://pepy.tech/project/pep8-checker)
-[![PyPI version shields.io](https://img.shields.io/pypi/v/pep8-checker.svg)](https://pypi.python.org/pypi/pep8-checker/)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pep8-checker.svg)](https://pypi.python.org/pypi/pep8-checker/)
-[![CodeFactor](https://www.codefactor.io/repository/github/Volodymyr Yahello/pep8-checker/badge)](https://www.codefactor.io/repository/github/Volodymyr Yahello/pep8-checker)
 
-# pep8-checker
+# PEP8 checker
 
-> A brief description for **pep8-checker** tool.
+> Check your python code complies with pep8 conventions.
+> 
+> It uses **bottle** micro framework and **AWS lambda** function to execute code on the server.
 
 ## Tools
 
 - python 3.6 | 3.7 | 3.8
+- [bottle](https://bottlepy.org/docs/dev/tutorial.html)
+- [AWS lambda](https://aws.amazon.com/)
 - [travis](https://travis-ci.org/) CI
 - code analysis
   - [pytest](https://pypi.org/project/pytest/)
@@ -33,41 +30,17 @@
   - [pydocstyle](https://github.com/PyCQA/pydocstyle)
 
 ## Usage
-
-![Usage](usage.gif)
+TBD
 
 ### Quick start
-
-```bash
-pip install pep8-checker
-✨ 🍰 ✨
-```
-
-After please run **pep8-checker** tool from your shell:
-```bash
-pep8-checker
-```
+TBD
 
 ### Source code
-
-```bash
-git clone path/to/github/repo.git
-pip install -e .
-pep8-checker
-```
-
-Or using direct release:
-```bash
-pip install git+https://path/to/github/repo@0.0.1
-pep8-checker
-```
+TBD
 
 ### Local debug
+TBD
 
-```bash
-git clone path/to/github/repo.git
-python -m pep8-checker
-```
 **[⬆ back to top](#pep8-checker)**
 
 ## Development notes
@@ -101,8 +74,8 @@ Distributed under the `MIT` license. See [license](LICENSE.md) for more informat
 
 You can reach out me at:
 * [vyahello@gmail.com](vyahello@gmail.com)
-* [https://github.com/Volodymyr Yahello](https://github.com/Volodymyr Yahello)
-* [https://www.linkedin.com/in/Volodymyr Yahello](https://www.linkedin.com/in/Volodymyr Yahello)
+* [https://github.com/vyahello](https://github.com/vyahello)
+* [https://www.linkedin.com/in/volodymyr-yahello-821746127/](https://www.linkedin.com/in/volodymyr-yahello-821746127/)
 
 ### Contributing
 
@@ -119,7 +92,7 @@ I would highly appreciate any contribution and support. If you are interested to
 
 ### What's next
 
-All recent activities and ideas are described at project [issues](https://github.com/Volodymyr Yahello/pep8-checker/issues) page. 
+All recent activities and ideas are described at project [issues](https://github.com/vyahello/pep8-checker/issues) page. 
 If you have ideas you want to change/implement please do not hesitate and create an issue.
 
 **[⬆ back to top](#pep8-checker)**
