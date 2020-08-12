@@ -1,39 +1,11 @@
 """Represents executable entrypoint for `pep8-checker` application."""
-import os
 from typing import Any, Dict, Optional
 from pathlib import Path
-import attr
 from bottle import TEMPLATE_PATH, abort, request, route, run, view
 import requests
+from checker.endpoint import Server, api_url
 
 TEMPLATE_PATH.append(str(Path('./') / 'checker' / 'views'))
-
-
-def __api_url() -> str:
-    """Returns AWS_ENDPOINT URL."""
-    url: str = os.environ.get('AWS_ENDPOINT', '')
-    if not url:
-        raise RuntimeError('Please set API_URL environment variable')
-    return url
-
-
-@attr.dataclass(frozen=True, slots=True)
-class __Server:
-    """The class represents a server endpoint."""
-
-    host: str = 'localhost'
-    port: int = 5050
-    is_debug: bool = True
-    reloader: bool = True
-
-    def as_json(self) -> Dict[str, Any]:
-        """Returns server configuration as a dict."""
-        return {
-            'host': self.host,
-            'port': self.port,
-            'is_debug': self.is_debug,
-            'reloader': self.reloader,
-        }
 
 
 @route('/', method=('GET', 'POST'))
@@ -47,7 +19,7 @@ def index() -> Dict[str, str]:
     code: str = request.forms.get('code', '')  # pylint: disable=no-member
     if code:
         resp: Dict[Any, Any] = requests.post(
-            url=__api_url(), json={'code': code}
+            url=api_url(), json={'code': code}
         ).json()
         error: Optional[str] = resp.get('errorMessage')
         exception: Optional[str] = resp.get('errorType')
@@ -60,7 +32,7 @@ def index() -> Dict[str, str]:
     return {'title': title, 'code': code, 'pep_errors': ''}
 
 
-def __easyrun(server: __Server = __Server()) -> None:
+def easyrun(server: Server = Server()) -> None:
     """Launches a web application.
 
     Args:
@@ -75,4 +47,4 @@ def __easyrun(server: __Server = __Server()) -> None:
 
 
 if __name__ == '__main__':
-    __easyrun()
+    easyrun()
