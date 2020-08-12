@@ -7,6 +7,7 @@
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
+[![CodeFactor](https://www.codefactor.io/repository/github/vyahello/pep8-checker/badge)](https://www.codefactor.io/repository/github/vyahello/pep8-checker)
 
 # PEP8 checker
 
