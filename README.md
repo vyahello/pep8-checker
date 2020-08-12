@@ -36,7 +36,7 @@ _**Note**: the project is under construction._
   - [pydocstyle](https://github.com/PyCQA/pydocstyle)
 
 ## Usage
-![Usage](howto.gif)
+![Usage](demo.gif)
 
 ### Quick start
 TBD
