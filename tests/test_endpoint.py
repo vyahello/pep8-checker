@@ -1,4 +1,5 @@
-from checker.endpoint import Server
+import pytest
+from checker.__main__ import Server, api_url
 from tests.markers import unit
 
 pytestmark = unit
@@ -26,9 +27,12 @@ def test_server_as_json(server: Server) -> None:
     }
 
 
-def test_api_url_set(set_api_url: str) -> None:
-    assert set_api_url
+@pytest.mark.usefixtures('_set_api_url')
+def test_api_url_set() -> None:
+    assert api_url()
 
 
-def test_api_url_unset(unset_api_url: str) -> None:
-    assert not unset_api_url
+@pytest.mark.usefixtures('_unset_api_url')
+def test_api_url_unset() -> None:
+    with pytest.raises(RuntimeError):
+        api_url()

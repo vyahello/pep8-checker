@@ -101,7 +101,6 @@ DOC
       check-unittests && \
       is-passed
     )
-    return 0
 }
 
 main

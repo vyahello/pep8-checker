@@ -1,6 +1,6 @@
 import os
 import pytest
-from checker.endpoint import Server
+from checker.__main__ import Server
 
 
 @pytest.fixture(scope='module')
@@ -9,12 +9,10 @@ def server() -> Server:
 
 
 @pytest.fixture(scope='module')
-def set_api_url() -> str:
+def _set_api_url() -> None:
     os.environ['AWS_ENDPOINT'] = 'secret'
-    yield os.environ['AWS_ENDPOINT']
 
 
 @pytest.fixture(scope='module')
-def unset_api_url() -> str:
+def _unset_api_url() -> None:
     os.environ['AWS_ENDPOINT'] = ''
-    yield os.environ['AWS_ENDPOINT']
