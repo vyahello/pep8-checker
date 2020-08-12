@@ -5,6 +5,8 @@
 [![Checked with pydocstyle](https://img.shields.io/badge/pydocstyle-checked-yellowgreen)](http://www.pydocstyle.org/)
 [![Checked with interrogate](https://img.shields.io/badge/interrogate-checked-yellowgreen)](https://interrogate.readthedocs.io/en/latest/)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Build Status](https://travis-ci.org/vyahello/pep8-checker.svg?branch=master)](https://travis-ci.org/vyahello/pep8-checker)
+[![Coverage Status](https://coveralls.io/repos/github/vyahello/pep8-checker/badge.svg?branch=master)](https://coveralls.io/github/vyahello/pep8-checker?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/pep8-checker/badge)](https://www.codefactor.io/repository/github/vyahello/pep8-checker)
