@@ -1,10 +1,9 @@
 Versions
 ========
 
-0.0.0
+0.0.1
 ========
 
-_Release date: 09.08.2020_
+_Release date: 13.08.2020_
 
-- commit
-- ...
+- Distribute initial version of a project
