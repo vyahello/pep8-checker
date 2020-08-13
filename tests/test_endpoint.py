@@ -6,7 +6,7 @@ pytestmark = unit
 
 
 def test_server_host(server: Server) -> None:
-    assert server.host == 'localhost'
+    assert server.host == '0.0.0.0'
 
 
 def test_server_port(server: Server) -> None:
