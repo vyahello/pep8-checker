@@ -21,7 +21,7 @@ def api_url() -> str:
 class Server:
     """The class represents a server endpoint."""
 
-    host: str = 'localhost'
+    host: str = '0.0.0.0'
     port: int = 5050
     is_debug: bool = True
     reloader: bool = True
