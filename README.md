@@ -57,16 +57,19 @@ _**Note**: please make sure **AWS_ENDPOINT** environment variable is configured 
 #### Base image
 Please use the following command sample to build base docker image:
 ```bash
-docker build --no-cache -t vyahello/pep8-checker:{version} -f Dockerfile.base .
+docker build --no-cache \
+         --tag vyahello/pep8-checker:{version} \ 
+         --file Dockerfile.base .
 ```
 
 #### Main image
 Please use the following command sample to build main docker image:
 ```bash
-docker build --no-cache -t vyahello/pep8-checker \ 
-             --build-arg VERSION={version} \
-             --build-arg REPOSITORY=vyahello/pep8-checker \
-             --build-arg AWS_ENDPOINT={endpoint} .
+docker build --no-cache \
+         --tag vyahello/pep8-checker:{version} \ 
+         --build-arg VERSION={version} \
+         --build-arg REPOSITORY=vyahello/pep8-checker \
+         --build-arg AWS_ENDPOINT={endpoint} .
 ```
 
 ### Testing
