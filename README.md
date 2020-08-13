@@ -52,6 +52,23 @@ _**Note**: please make sure **AWS_ENDPOINT** environment variable is configured 
 
 ## Development notes
 
+### Docker 
+
+#### Base image
+Please use the following command sample to build base docker image:
+```bash
+docker build --no-cache -t vyahello/pep8-checker:{version} -f Dockerfile.base .
+```
+
+#### Main image
+Please use the following command sample to build main docker image:
+```bash
+docker build --no-cache -t vyahello/pep8-checker \ 
+             --build-arg VERSION={version} \
+             --build-arg REPOSITORY=vyahello/pep8-checker \
+             --build-arg AWS_ENDPOINT={endpoint} .
+```
+
 ### Testing
 
 Generally, `pytest` tool is used to organize testing procedure.
