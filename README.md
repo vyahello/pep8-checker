@@ -40,7 +40,7 @@ _**Note**: the project is under construction._
 
 ### Quick start
 ```bash
-docker run -it vyahello/pep8-checker:0.0.1
+docker run --rm -it vyahello/pep8-checker:0.0.1
 ```
 
 ### Source code

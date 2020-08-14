@@ -10,7 +10,7 @@ DOC
     Please use next command:
       - 'help' to see tool help
          docker run ${IMAGE_REPO}:${IMAGE_VERSION} --help
-      - 'quotes' to run quotes web application
+      - 'checker' to run quotes web application
          docker run -it -p {local-port}:5050 ${IMAGE_REPO}:${IMAGE_VERSION} checker
 HELP
 }
