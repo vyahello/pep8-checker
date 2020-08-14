@@ -39,7 +39,9 @@ _**Note**: the project is under construction._
 ![Usage](demo.gif)
 
 ### Quick start
-TBD
+```bash
+docker run -it vyahello/pep8-checker:0.0.1
+```
 
 ### Source code
 ```bash
