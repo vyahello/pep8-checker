@@ -13,6 +13,7 @@
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/pep8-checker/badge)](https://www.codefactor.io/repository/github/vyahello/pep8-checker)
 [![Docker pulls](https://img.shields.io/docker/pulls/vyahello/pep8-checker.svg)](https://hub.docker.com/repository/docker/vyahello/pep8-checker)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fpep8-checker.herokuapp.com)](https://pep8-checker.herokuapp.com)
 
 # PEP8 checker
 
