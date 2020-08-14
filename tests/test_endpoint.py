@@ -10,7 +10,7 @@ def test_server_host(server: Server) -> None:
 
 
 def test_server_port(server: Server) -> None:
-    assert server.port == 5050
+    assert server.port == '5050'
 
 
 def test_server_debug(server: Server) -> None:
@@ -23,7 +23,7 @@ def test_server_reloader(server: Server) -> None:
 
 def test_server_as_json(server: Server) -> None:
     assert server.as_json() == {
-        'host': '0.0.0.0', 'port': 5050, 'is_debug': True, 'reloader': True
+        'host': '0.0.0.0', 'port': '5050', 'is_debug': True, 'reloader': True
     }
 
 

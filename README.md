@@ -19,8 +19,6 @@
 > 
 > It uses **bottle** python micro web framework and **AWS lambda** function to execute code on the server.
 
-_**Note**: the project is under construction._
-
 ## Tools
 
 - python 3.6, 3.7, 3.8
@@ -39,9 +37,13 @@ _**Note**: the project is under construction._
 ![Usage](demo.gif)
 
 ### Quick start
+Please check an app via at https://pep8-checker.herokuapp.com.
+
+Or via dedicated docker image:
 ```bash
 docker run --rm -it vyahello/pep8-checker:0.0.1
 ```
+> Please follow help instructions.
 
 ### Source code
 ```bash

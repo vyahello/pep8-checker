@@ -1,4 +1,5 @@
 """Represents executable entrypoint for `pep8-checker` application."""
+import http
 import os
 from typing import Any, Dict, Optional
 from pathlib import Path
@@ -22,7 +23,7 @@ class Server:
     """The class represents a server endpoint."""
 
     host: str = '0.0.0.0'
-    port: int = 5050
+    port: str = os.environ.get('PORT', '5050')
     is_debug: bool = True
     reloader: bool = True
 
@@ -53,7 +54,7 @@ def index() -> Dict[str, str]:
         exception: Optional[str] = resp.get('errorType')
         if error and exception:
             abort(
-                code=400,
+                code=int(http.HTTPStatus.BAD_REQUEST),
                 text=f'Lambda function returned status {exception} exception',
             )
         return {'title': title, 'code': code, 'pep_errors': resp['body']}
