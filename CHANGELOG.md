@@ -6,7 +6,7 @@ Versions
 
 _Release date: 13.08.2020_
 
-- Release 0.0.1 main docker image
+- Release 0.0.2 main docker image
 
 0.0.1
 ========

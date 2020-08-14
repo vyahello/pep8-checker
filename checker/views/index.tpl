@@ -40,8 +40,10 @@
 		<div class="mui-textfield">
 			<textarea id="code" name="code" placeholder="Paste your code here ...">{{ code }}</textarea>
 		</div>
-		<button type="submit" class="mui-btn mui-btn--primary">Verify code</button>
+		<button type="submit" class="mui-btn mui-btn--danger">Verify code</button>
 		</form>
+
+	<div class="mui--no-transition" style="margin: 55px 10px;">Copyright &copy; Volodymyr Yahello (<a href="https://github.com/vyahello/pep8-checker">Github</a>)</div>
 	</div>
 
     <div class="mui-col-md-6">
@@ -56,7 +58,6 @@
 				%end
 		</div>
 	</div>
-
   </div>
 
   </body>
