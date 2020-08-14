@@ -1,5 +1,5 @@
 FROM vyahello/pep8-checker-base:0.0.1
-LABEL version=0.0.1 \
+LABEL version=0.0.2 \
       metadata="The main image for pep8-checker application" \
       maintainer="Volodymyr Yahello <vyahello@gmail.com>"
 ARG VERSION

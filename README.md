@@ -12,6 +12,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/pep8-checker/badge)](https://www.codefactor.io/repository/github/vyahello/pep8-checker)
+[![Docker pulls](https://img.shields.io/docker/pulls/vyahello/pep8-checker.svg)](https://hub.docker.com/repository/docker/vyahello/pep8-checker)
 
 # PEP8 checker
 
@@ -39,18 +40,18 @@
 ### Quick start
 Please check an app via at https://pep8-checker.herokuapp.com.
 
-Or via dedicated docker image:
+Or launch it via dedicated docker image:
 ```bash
-docker run --rm -it vyahello/pep8-checker:0.0.1
+docker run --rm -it vyahello/pep8-checker:0.0.2
 ```
-> Please follow help instructions.
+> Please follow help instructions further.
 
 ### Source code
 ```bash
 git clone git@github.com:vyahello/pep8-checker.git
 python -m checker
 ```
-_**Note**: please make sure **AWS_ENDPOINT** environment variable is configured preliminary._
+>  **Note**: _please make sure **AWS_ENDPOINT** environment variable is configured preliminary._
 
 **[⬆ back to top](#pep8-checker)**
 
