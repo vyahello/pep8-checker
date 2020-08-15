@@ -3,6 +3,8 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
+env:
+  - IMAGE_REPO=vyahello/pep8-checker IMAGE_VERSION=0.0.2
 addons:
   apt:
     update: true
@@ -12,6 +14,7 @@ install:
   - pip install -r requirements-dev.txt -U
 script:
     - ./analyse-source-code.sh
+    - bash test-docker.sh
 after_success:
   - coveralls
 notifications:
