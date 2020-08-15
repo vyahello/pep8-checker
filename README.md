@@ -40,7 +40,7 @@
 ![Usage](demo.gif)
 
 ### Quick start
-Please check an app via at https://pep8-checker.herokuapp.com.
+Please check an app at https://pep8-checker.herokuapp.com.
 
 Or launch it via dedicated docker image:
 ```bash
