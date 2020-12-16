@@ -24,17 +24,21 @@
 
 ## Tools
 
+### Production
+
 - python 3.6, 3.7, 3.8
 - [bottle](https://bottlepy.org/docs/dev/tutorial.html)
 - [AWS lambda](https://aws.amazon.com/)
 - [travis](https://travis-ci.org/) CI
-- code analysis
-  - [pytest](https://pypi.org/project/pytest/)
-  - [black](https://black.readthedocs.io/en/stable/)
-  - [mypy](http://mypy.readthedocs.io/en/latest)
-  - [pylint](https://www.pylint.org/)
-  - [flake8](http://flake8.pycqa.org/en/latest/)
-  - [pydocstyle](https://github.com/PyCQA/pydocstyle)
+
+### Development
+
+- [pytest](https://pypi.org/project/pytest/)
+- [black](https://black.readthedocs.io/en/stable/)
+- [mypy](http://mypy.readthedocs.io/en/latest)
+- [pylint](https://www.pylint.org/)
+- [flake8](http://flake8.pycqa.org/en/latest/)
+- [pydocstyle](https://github.com/PyCQA/pydocstyle)
 
 ## Usage
 ![Usage](media/demo.gif)
@@ -53,7 +57,7 @@ docker run --rm -it vyahello/pep8-checker:0.0.2
 git clone git@github.com:vyahello/pep8-checker.git
 python -m checker
 ```
->  **Note**: _please make sure **AWS_ENDPOINT** environment variable is configured preliminary._
+> **Note**: _please make sure *AWS_ENDPOINT* environment variable is configured preliminary._
 
 **[⬆ back to top](#pep8-checker)**
 

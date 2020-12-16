@@ -47,17 +47,17 @@ def index() -> Dict[str, str]:
     title = 'PEP8 Checker'
     code: str = request.forms.get('code', '')  # pylint: disable=no-member
     if code:
-        resp: Dict[Any, Any] = requests.post(
+        response: Dict[Any, Any] = requests.post(
             url=api_url(), json={'code': code}
         ).json()
-        error: Optional[str] = resp.get('errorMessage')
-        exception: Optional[str] = resp.get('errorType')
+        error: Optional[str] = response.get('errorMessage')
+        exception: Optional[str] = response.get('errorType')
         if error and exception:
             abort(
                 code=int(http.HTTPStatus.BAD_REQUEST),
                 text=f'Lambda function returned status {exception} exception',
             )
-        return {'title': title, 'code': code, 'pep_errors': resp['body']}
+        return {'title': title, 'code': code, 'pep_errors': response['body']}
     return {'title': title, 'code': code, 'pep_errors': ''}
 
 
