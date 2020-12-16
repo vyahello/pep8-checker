@@ -1,4 +1,4 @@
-![Screenshot](logo.png)
+![Screenshot](media/logo.png)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -37,7 +37,7 @@
   - [pydocstyle](https://github.com/PyCQA/pydocstyle)
 
 ## Usage
-![Usage](demo.gif)
+![Usage](media/demo.gif)
 
 ### Quick start
 Please check an app at https://pep8-checker.herokuapp.com.
