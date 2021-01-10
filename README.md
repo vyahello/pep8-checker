@@ -10,7 +10,6 @@
 [![Build Status](https://travis-ci.org/vyahello/pep8-checker.svg?branch=master)](https://travis-ci.org/vyahello/pep8-checker)
 [![Coverage Status](https://coveralls.io/repos/github/vyahello/pep8-checker/badge.svg?branch=master)](https://coveralls.io/github/vyahello/pep8-checker?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-[![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/pep8-checker/badge)](https://www.codefactor.io/repository/github/vyahello/pep8-checker)
 [![Docker pulls](https://img.shields.io/docker/pulls/vyahello/pep8-checker.svg)](https://hub.docker.com/repository/docker/vyahello/pep8-checker)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fpep8-checker.herokuapp.com)](https://pep8-checker.herokuapp.com)
@@ -18,7 +17,7 @@
 
 # PEP8 checker
 
-> Check your python code complies with pep8 conventions.
+> This project allows to check your python code complies with pep8 conventions.
 > 
 > It uses **bottle** python micro web framework and **AWS lambda** function to execute code on the server.
 
@@ -50,14 +49,17 @@ Or launch it via dedicated docker image:
 ```bash
 docker run --rm -it vyahello/pep8-checker:0.0.2
 ```
-> Please follow help instructions further.
+> Please follow the help instructions further.
 
 ### Source code
 ```bash
 git clone git@github.com:vyahello/pep8-checker.git
 python -m checker
 ```
-> **Note**: _please make sure *AWS_ENDPOINT* environment variable is configured preliminary._
+> **Note**: _please make sure **AWS_ENDPOINT** environment variable is configured preliminary._
+```bash
+export AWS_ENDPOINT=https://...amazonaws.com/v1
+```
 
 **[⬆ back to top](#pep8-checker)**
 
