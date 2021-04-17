@@ -20,6 +20,8 @@
 > This project allows to check your python code complies with pep8 conventions.
 > 
 > It uses **bottle** python micro web framework and **AWS lambda** function to execute code on the server.
+>
+> Please check the official [docker image](https://hub.docker.com/repository/docker/vyahello/pep8-checker).
 
 ## Tools
 
@@ -28,7 +30,7 @@
 - python 3.6, 3.7, 3.8, 3.9
 - [bottle](https://bottlepy.org/docs/dev/tutorial.html)
 - [AWS lambda](https://aws.amazon.com/)
-- [travis](https://travis-ci.org/) CI
+- docker (>=18.0)
 
 ### Development
 
@@ -38,6 +40,7 @@
 - [pylint](https://www.pylint.org/)
 - [flake8](http://flake8.pycqa.org/en/latest/)
 - [pydocstyle](https://github.com/PyCQA/pydocstyle)
+- [travis](https://travis-ci.org/)
 
 ## Usage
 ![Usage](media/demo.gif)
