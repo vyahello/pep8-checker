@@ -10,7 +10,6 @@ jobs:
           - 3.6
           - 3.7
           - 3.8
-          - 3.9
     steps:
     - uses: actions/checkout@v1
     - name: Set up Python ${{ matrix.python-version }}
@@ -21,4 +20,5 @@ jobs:
       run: |
         pip install pip -U
         pip install -r requirements.txt
+        pip install -r requirements-dev.txt
         ./analyse-source-code.sh

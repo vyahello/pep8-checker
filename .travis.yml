@@ -3,7 +3,6 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
-  - "3.9"
 env:
   - IMAGE_REPO=vyahello/pep8-checker IMAGE_VERSION=0.0.2
 addons:
