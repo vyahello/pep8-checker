@@ -18,7 +18,7 @@ flake8-unused-arguments==0.0.5
 flake8-variables-names==0.0.3
 interrogate==1.2.0
 ipython==7.16.1
-mypy==0.782
+mypy==0.812
 pdbpp==0.10.2
 pydocstyle==5.0.2
 pylint==2.5.3
