@@ -1,7 +1,7 @@
 """Represents executable entrypoint for AWS lambda function."""
 from contextlib import redirect_stdout
 from io import StringIO
-from tempfile import NamedTemporaryFile as temp_file
+from tempfile import NamedTemporaryFile
 from typing import Any, Dict
 import pycodestyle
 
@@ -9,7 +9,7 @@ import pycodestyle
 def lambda_handler(event: Dict[str, Any]) -> Dict[str, Any]:
     """Returns response from AWS lambda execution."""
     code: str = event.get('code', '')
-    with open(temp_file(dir='/tmp').name, 'w') as file:
+    with open(NamedTemporaryFile(dir='/tmp').name, 'w') as file:
         file.write(f'{code}\n')
         file.seek(0)
         output = StringIO()

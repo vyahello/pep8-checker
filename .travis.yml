@@ -3,13 +3,14 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
+  - "3.9"
 env:
   - IMAGE_REPO=vyahello/pep8-checker IMAGE_VERSION=0.0.2
 addons:
   apt:
     update: true
 install:
-  - pip install pip -U
+  - pip install pip==20.2.0
   - pip install -r requirements.txt -U
   - pip install -r requirements-dev.txt -U
 script:
