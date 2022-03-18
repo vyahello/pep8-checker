@@ -46,7 +46,9 @@
 ![Usage](media/demo.gif)
 
 ### Quick start
-Please check an app at https://pep8-checker.herokuapp.com.
+Please check an app via:
+  - https://pep8-checker.herokuapp.com (prod stage)
+  - http://178.62.222.165:5001 (test stage)
 
 Or launch it via dedicated docker image:
 ```bash
